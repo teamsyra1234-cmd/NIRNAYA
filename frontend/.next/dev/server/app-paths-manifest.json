@@ -1,9 +1,0 @@
-{
-  "/api/auth/session/route": "app/api/auth/session/route.js",
-  "/api/v1/connectors/route": "app/api/v1/connectors/route.js",
-  "/api/v1/dashboard/route": "app/api/v1/dashboard/route.js",
-  "/api/v1/evidence/route": "app/api/v1/evidence/route.js",
-  "/api/v1/geo/districts/route": "app/api/v1/geo/districts/route.js",
-  "/api/v1/scenarios/history/route": "app/api/v1/scenarios/history/route.js",
-  "/page": "app/page.js"
-}
