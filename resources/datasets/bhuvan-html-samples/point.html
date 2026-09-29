@@ -1,0 +1,135 @@
+  
+
+  <div class="content-wrapper">
+		          <div class="page-header">
+            <h3 class="page-title">
+              Thematic Statistics
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Thematic Stats</a></li>
+                
+<li class="breadcrumb-item active" aria-current="page">LULC 250k Statistics</li>
+              </ol>
+            </nav>
+          </div>
+         <!-- <div class="row">
+            <div class="col-12">
+              <span class="d-flex align-items-center purchase-popup">
+                <p>Like what you see? Check out our premium version for more.</p>
+                <a href="https://github.com/BootstrapDash/PurpleAdmin-Free-Admin-Template" target="_blank" class="btn ml-auto download-button">Download Free Version</a>
+                <a href="https://www.bootstrapdash.com/product/purple-bootstrap-4-admin-template/" target="_blank" class="btn purchase-button">Upgrade To Pro</a>
+                <i class="mdi mdi-close popup-dismiss"></i>
+              </span>
+            </div>
+          </div>-->
+          <div class="page-header">
+            <h3 class="page-title">
+              <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                <i class="mdi mdi-chart-bar"></i>                 
+              </span>
+              LULC Statistics as JSON/ Table
+            </h3>
+            <!--<nav aria-label="breadcrumb">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">
+                  <span></span>Overview
+                  <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                </li>
+              </ul>
+            </nav>-->
+          </div>
+          <div class="row">
+            <div class=" stretch-card grid-margin">
+              <div class="card  card-img-holder text-black">
+                <div class="card-body">
+				<h3>Introduction</h3>
+Year wise LULC 250k statistics of years ranging from 2004-2005 to 2018-2019 for your Academic Research and Analysis.
+Gives you the Description of all the land use land cover types at the particular point(longitude,latitude) as a JSON.
+
+<br/><br/>
+<div class="dropdown-divider"></div>
+<h3>Input URL</h3>
+<h4>Display of Data for Single Year in Json Format</h4>
+<br/>
+https://bhuvan-app1.nrsc.gov.in/api/lulc250k/curl_lulc250k_point.php?lon=77&lat=23&year=2004_05&token=xxxxxxxx
+<br/><br/>
+<h4>Display of Data for Multiple Years in Json Format</h4>
+<br/>
+https://bhuvan-app1.nrsc.gov.in/api/lulc250k/curl_lulc250k_point.php?lon=77&lat=23&year=2004_05,2005_06&token=xxxxxxxx
+<br/><br/>
+<h4>Display of Data for All Years in Json Format</h4>
+<br/>
+https://bhuvan-app1.nrsc.gov.in/api/lulc250k/curl_lulc250k_point.php?lon=77&lat=23&year=all&token=xxxxxxxx
+<br/><br/>
+<br/>
+<div class="dropdown-divider"></div>
+<h3>Request Type</h3>
+GET
+<br/><br/>
+<div class="dropdown-divider"></div>
+<h3>Request Headers</h3>
+Content-Type: Defines the type of content being sent to the API. It must be set to “application/x-www-form- urlencoded”.<br/><br/>
+<p><b>Please note:</b> sending any request without it or different than it would lead to a 400: Bad request.</p>
+
+<div class="dropdown-divider"></div>
+<h3>Response Type</h3>
+The API would return a JSON response.<br>
+Get Year Wise LULC stats (Description for every LU code) as GeoJSON.
+
+<br/><br/>
+<div class="dropdown-divider"></div>
+<h3>Request Parameters</h3>
+<li>
+	lon:Longitude<br/>
+	Example: lon=80
+</li>
+<li>
+	lat:Latitude<br/>
+	Example: lat=23
+</li>
+<li>
+	year:A single year or multiple years separated by comma or 'all' keyword for all years.
+	<br/>
+	Example 1: 2004_05  for single year 
+		<br/>
+
+	Example 2: 2004_05,2005_06,2007_08 for multiple years
+		<br/>
+
+	Example 3: all for all years.
+</li>
+
+<li>
+	Token (Your API key for selected theme)<br/>
+	Example: token=xxxxxxxx
+</li>
+
+</ul>
+<div class="dropdown-divider"></div>
+<h3>Sample Output for all years</h3>
+<ul>
+<li>
+A JSON containing LULC stats.
+<pre id="json"></pre>
+</li>
+</ul>
+
+
+                </div>
+              </div>
+            </div>
+           
+ 
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="https://bhuvan.nrsc.gov.in/" target="_blank">Bhuvan</a>. All rights reserved.</span>
+            <!--<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>-->
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>

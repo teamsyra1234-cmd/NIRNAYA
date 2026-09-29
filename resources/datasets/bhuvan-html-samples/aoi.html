@@ -1,0 +1,110 @@
+        <div class="content-wrapper">
+		          <div class="page-header">
+            <h3 class="page-title">
+              Thematic Stats
+
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Thematic Stats</a></li>
+                <li class="breadcrumb-item active" aria-current="page">LULC AOI Wise</li>
+              </ol>
+            </nav>
+          </div>
+         <!-- <div class="row">
+            <div class="col-12">
+              <span class="d-flex align-items-center purchase-popup">
+                <p>Like what you see? Check out our premium version for more.</p>
+                <a href="https://github.com/BootstrapDash/PurpleAdmin-Free-Admin-Template" target="_blank" class="btn ml-auto download-button">Download Free Version</a>
+                <a href="https://www.bootstrapdash.com/product/purple-bootstrap-4-admin-template/" target="_blank" class="btn purchase-button">Upgrade To Pro</a>
+                <i class="mdi mdi-close popup-dismiss"></i>
+              </span>
+            </div>
+          </div>-->
+          <div class="page-header">
+            <h3 class="page-title">
+              <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                <i class="mdi mdi-chart-bar"></i>                 
+              </span>
+             LULC Area Of Interest Wise
+            </h3>
+            <!--<nav aria-label="breadcrumb">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">
+                  <span></span>Overview
+                  <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                </li>
+              </ul>
+            </nav>-->
+          </div>
+          <div class="row">
+            <div class=" stretch-card grid-margin">
+              <div class="card  card-img-holder text-black">
+                <div class="card-body">
+				<h3>Introduction</h3>
+Area of Interest wise LULC stats for your academic reseach and statistical analysis.
+Gives you the area of all the land use land cover types in that particular AOI as a JSON, which can be exported to any Geospatial software for further analysis.Calculate LULC stats wherever you want in whatever area you want.
+<br/><br/>
+<div class="dropdown-divider"></div>
+<h3>Input URL</h3>
+https://bhuvan-app1.nrsc.gov.in/api/lulc/curl_aoi.php?geom=POLYGON((77.537826049804%2018.312927062987,77.539885986327%2018.279624755858,77.596190917968%2018.295417602538,77.537826049804%2018.312927062987))&token=xxxxxxxxxxxxxxx
+
+<br/><br/>
+<br/>
+<div class="dropdown-divider"></div>
+<h3>Request Type</h3>
+GET
+<br/><br/>
+<div class="dropdown-divider"></div>
+<h3>Request Headers</h3>
+Content-Type: Defines the type of content being sent to the API. It must be set to “application/x-www-form- urlencoded”.<br/><br/>
+<p><b>Please note:</b> sending any request without it or different than it would lead to a 400: Bad request.</p>
+
+<div class="dropdown-divider"></div>
+<h3>Response Type</h3>
+The API would return a JSON response.<br>
+Gives the area of each type of LandUse code for the states present in the area of interest.
+For the given theme  accordingly.
+<br/><br/>
+<div class="dropdown-divider"></div>
+<h3>Request Parameters</h3>
+<p><b>Note:</b> Geometry has to be provided as WKT.</p>
+<ul>
+<li>
+	geom
+</li>
+<li>
+	token (you api key for selected theme)
+</li>
+
+</ul>
+<div class="dropdown-divider"></div>
+<h3>Sample Output</h3>
+<ul>
+<li>
+Null if no data is available in database.
+</li>
+
+<li>
+<pre id="json"></pre>
+</li>
+
+
+
+                </div>
+              </div>
+            </div>
+           
+ 
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="https://bhuvan.nrsc.gov.in/" target="_blank">Bhuvan</a>. All rights reserved.</span>
+            <!--<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>-->
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>

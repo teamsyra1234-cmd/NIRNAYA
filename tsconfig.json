@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@/db": ["./backend/db/index"],
+      "@/db/*": ["./backend/db/*"],
+      "@/lib/auth": ["./backend/services/auth"],
+      "@/lib/scenarios": ["./backend/services/scenarios"],
+      "@/lib/nirnaya-data": ["./backend/services/nirnaya-data"],
+      "@/lib/adapters/*": ["./backend/services/adapters/*"],
+      "@/lib/utils": ["./frontend/lib/utils"],
+      "@/components/*": ["./frontend/components/*"],
+      "@/hooks/*": ["./frontend/hooks/*"],
+      "@/frontend/*": ["./frontend/*"],
+      "@/backend/*": ["./backend/*"],
+      "@/resources/*": ["./resources/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "frontend/**/*.ts",
+    "frontend/**/*.tsx",
+    "backend/**/*.ts",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": [
+    "node_modules",
+    "resources/experiments",
+    "nirnaya"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./*"],
+      "@/components/*": ["./components/*"],
+      "@/hooks/*": ["./hooks/*"],
+      "@/db": ["../backend/db/index"],
+      "@/db/*": ["../backend/db/*"],
+      "@/lib/utils": ["./lib/utils"],
+      "@/lib/auth": ["../backend/services/auth"],
+      "@/lib/scenarios": ["../backend/services/scenarios"],
+      "@/lib/nirnaya-data": ["../backend/services/nirnaya-data"],
+      "@/lib/adapters/*": ["../backend/services/adapters/*"],
+      "@/lib/*": ["./lib/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

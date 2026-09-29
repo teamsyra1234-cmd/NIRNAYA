@@ -1,0 +1,10 @@
+{
+  "name": "nirnaya-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "seed": "tsx scripts/seed.ts",
+    "audit": "tsx scripts/audit-db.ts",
+    "init-ogd": "tsx scripts/init-ogd-db.ts"
+  }
+}

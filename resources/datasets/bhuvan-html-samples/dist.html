@@ -1,0 +1,123 @@
+    <div class="content-wrapper">
+		          <div class="page-header">
+            <h3 class="page-title">
+              Thematic Statistics
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Thematic Stats</a></li>
+                <li class="breadcrumb-item active" aria-current="page">LULC 50k Statistics</li>
+              </ol>
+            </nav>
+          </div>
+         <!-- <div class="row">
+            <div class="col-12">
+              <span class="d-flex align-items-center purchase-popup">
+                <p>Like what you see? Check out our premium version for more.</p>
+                <a href="https://github.com/BootstrapDash/PurpleAdmin-Free-Admin-Template" target="_blank" class="btn ml-auto download-button">Download Free Version</a>
+                <a href="https://www.bootstrapdash.com/product/purple-bootstrap-4-admin-template/" target="_blank" class="btn purchase-button">Upgrade To Pro</a>
+                <i class="mdi mdi-close popup-dismiss"></i>
+              </span>
+            </div>
+          </div>-->
+          <div class="page-header">
+            <h3 class="page-title">
+              <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                <i class="mdi mdi-chart-bar"></i>                 
+              </span>
+              LULC Statistics as JSON/ Table
+            </h3>
+            <!--<nav aria-label="breadcrumb">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">
+                  <span></span>Overview
+                  <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                </li>
+              </ul>
+            </nav>-->
+          </div>
+          <div class="row">
+            <div class=" stretch-card grid-margin">
+              <div class="card  card-img-holder text-black">
+                <div class="card-body">
+				<h3>Introduction</h3>
+State wise and District wise LULC 50k statistics of 2005-2006 and 2011-2012 years for your Academic Research and Analysis.
+Gives you the area of all the land use land cover types in that particular state/district as a JSON or as a table with percentage of total area covered by the LULC class in that particular state/district.
+
+<br/><br/>
+<div class="dropdown-divider"></div>
+<h3>Input URL</h3>
+https://bhuvan-app1.nrsc.gov.in/api/lulc/curljson.php
+<br/><br/>
+https://bhuvan-app1.nrsc.gov.in/api/lulc/curlpie.php
+<br/><br/>
+
+<br/>
+<div class="dropdown-divider"></div>
+<h3>Request Type</h3>
+GET
+<br/><br/>
+<div class="dropdown-divider"></div>
+<h3>Request Headers</h3>
+Content-Type: Defines the type of content being sent to the API. It must be set to “application/x-www-form- urlencoded”.<br/><br/>
+<p><b>Please note:</b> sending any request without it or different than it would lead to a 400: Bad request.</p>
+
+<div class="dropdown-divider"></div>
+<h3>Response Type</h3>
+The API would return a JSON response.<br>
+Get District LULC stats (area per LU Code) as GeoJSON/CSV.
+
+<br/><br/>
+<div class="dropdown-divider"></div>
+<h3>Request Parameters</h3>
+<p><b>Note:</b> Four digit: First two digit state code, next two for District code</p>
+<ul>
+<li>
+	Year <ul><li>For statistics of 2005-2006 year (year=0506)</li><li>For statistics of 2011-2012 year (year=1112)</li></ul><br>
+</li>
+You can either give statcode or distcode in your get parameters. If both are given only distcode will be taken into consideration.<br><br>
+<li>
+	District Code <button id='getdistcode' onclick='getdistcode()'>District Codes</button><br />
+	Example: distcode=2301
+</li>
+<li>
+	State Code <button id='getstatcode' onclick='getstatcode()'>State Codes</button><br />
+	Example: statcode=AN
+</li>
+<li>
+	Token (Your API key for selected theme)<br/>
+	Example: token=xxxxxxxx
+</li>
+
+</ul>
+<div class="dropdown-divider"></div>
+<h3>Sample Output</h3>
+<ul>
+<li>
+A JSON containing LULC stats. <button id='getlucode' onclick='getlucode()'>Land Use Codes</button><br />
+<pre id="json"></pre>
+</li>
+<li>
+A chart and table giving percentages and areas of LULC classes in that state/district.</li>
+</ul>
+
+
+                </div>
+              </div>
+            </div>
+           
+ 
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="https://bhuvan.nrsc.gov.in/" target="_blank">Bhuvan</a>. All rights reserved.</span>
+            <!--<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>-->
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+	  
+	  
